@@ -5,12 +5,21 @@ let inputToDo = document.querySelector('.input-to-do');
 let listDiv = document.querySelector('.list')
 let listUl = document.querySelector('.list ul');
 
-let sorted = false;
+let sorted = true;
 
-sortIcon.addEventListener('click', function (e) { sortList(); });
 inputXMark.addEventListener('click', function (e) { cleanInput() });
 addButton.addEventListener('click', function (e) { addToList() });
 listUl.addEventListener('click', function (e) { removeLi(e) });
+
+sortIcon.addEventListener('click', function (e) { sortList(); });
+
+sortIcon.addEventListener('mouseover', function () {
+    changeColorOnHover(false);
+});
+
+sortIcon.addEventListener('mouseout', function () {
+    changeColorOnHover(true);
+});
 
 function addToList() {
     let trimmedValue = inputToDo.value.trim();
@@ -57,13 +66,40 @@ function toggleListVisibility() {
 
 function sortList() {
     sorted = !sorted;
-    console.log(sorted);
     let listItems = Array.from(listUl.children);
-    listItems.reverse();
+
+    listItems.sort((a, b) => {
+        let textA = a.querySelector('span').textContent.trim();
+        let textB = b.querySelector('span').textContent.trim();
+
+        const numA = parseFloat(textA);
+        const numB = parseFloat(textB);
+
+        const isNumA = !isNaN(numA);
+        const isNumB = !isNaN(numB);
+
+        if (isNumA && isNumB) {
+            return numA - numB;
+        }
+
+        if (isNumA) {
+            return 1;
+        }
+        if (isNumB) {
+            return -1;
+        }
+
+        return textA.localeCompare(textB);
+    });
+
+    if (sorted) {
+        listItems.reverse();
+    }
+
     listUl.innerHTML = '';
     listItems.forEach(item => listUl.appendChild(item));
-    changeColor()
 
+    changeColor();
 }
 
 
@@ -76,7 +112,7 @@ function getYellow() {
 function changeColor() {
     let rects = sortIcon.querySelectorAll('rect');
     let paths = sortIcon.querySelectorAll('path');
-    if (sorted) {
+    if (!sorted) {
         rects.forEach(rect => rect.setAttribute('fill', getYellow()));
         paths.forEach(path => path.setAttribute('fill', getYellow()));
     } else {
@@ -84,4 +120,27 @@ function changeColor() {
         paths.forEach(path => path.setAttribute('fill', '#C4C4C4'));
     }
 
+}
+
+function changeColorOnHover(isHover) {
+    let rects = sortIcon.querySelectorAll('rect');
+    let paths = sortIcon.querySelectorAll('path');
+
+    if (isHover) {
+        if (sorted) {
+            rects.forEach(rect => rect.setAttribute('fill', '#C4C4C4'));
+            paths.forEach(path => path.setAttribute('fill', '#C4C4C4'));
+        } else {
+            rects.forEach(rect => rect.setAttribute('fill', getYellow()));
+            paths.forEach(path => path.setAttribute('fill', getYellow()));
+        }
+    } else {
+        if (sorted) {
+            rects.forEach(rect => rect.setAttribute('fill', getYellow()));
+            paths.forEach(path => path.setAttribute('fill', getYellow()));
+        } else {
+            rects.forEach(rect => rect.setAttribute('fill', '#C4C4C4'));
+            paths.forEach(path => path.setAttribute('fill', '#C4C4C4'));
+        }
+    }
 }
