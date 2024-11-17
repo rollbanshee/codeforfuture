@@ -1,0 +1,1078 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+  --above-footer: #9dc9c8;
+  --review-card: #efefef;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+main section {
+  padding-bottom: 80px;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 21px;
+  padding-bottom: 30px;
+}
+
+header img {
+  max-width: 112px;
+  max-height: 66px;
+  padding-bottom: 70px;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+nav .date {
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+.kino {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.kino.left {
+  width: 50%;
+}
+
+.kino .left h1 {
+  width: 100%;
+  font-size: 60px;
+  font-family: "Roboto Slab", serif;
+  line-height: 81.11px;
+  margin-bottom: 20px;
+}
+
+.kino.left p {
+  font-size: 20px;
+  width: 414px;
+  height: 62px;
+  line-height: 30px;
+}
+
+.kino .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.kino .right img {
+  max-width: 304px;
+  max-height: 356px;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.bottom .items {
+  border: 1px solid #1d4681;
+  border-radius: 4px;
+  background-color: #1d4681;
+  color: #fff;
+  padding: 20px;
+  margin-left: -150px;
+  max-width: 450px;
+}
+
+.bottom p {
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.bottom span {
+  width: 100%;
+  display: block;
+  text-align: end;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
+}
+
+.about_course .top-row {
+  display: flex;
+  align-items: flex-end;
+  margin: 91px 0 0;
+  justify-content: space-between;
+}
+
+.about_course .top {
+  display: flex;
+}
+
+.about_course img {
+  max-width: 314px;
+  height: 315px;
+  margin: 90px 0 5px 40px;
+}
+
+.about_course .texts {
+  gap: 18px;
+  max-width: 55%;
+}
+
+.about_course .texts h1 {
+  font-size: 55px;
+  margin-bottom: 53px;
+}
+
+.card-head {
+  font-size: 55px;
+  text-align: left;
+  margin-bottom: 116px;
+  margin-left: 30px;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.about_course .texts {
+  max-width: 662px;
+  margin-right: 190px;
+}
+
+.about_course .texts p {
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+}
+
+.about_course .bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  gap: 50px;
+  font-family: Roboto, sans-serif;
+}
+
+.about_course .bottom-row img {
+  max-width: 232px;
+  height: 203px;
+}
+
+.about_course .short-texts {
+  display: flex;
+  max-width: 640px;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.about_course .short-text {
+  width: 150px;
+}
+
+.about_course .short-text h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.about_course .short-text p {
+  font-size: 18px;
+}
+
+.format h2 {
+  font-size: 55px;
+  line-height: 56px;
+  margin-bottom: 100px;
+}
+
+.format .infoes {
+  display: flex;
+  justify-content: space-between;
+  max-width: 974px;
+}
+
+.format .info {
+  max-width: 223px;
+}
+
+.info .head {
+  color: #1E4681;
+  font-size: 25px;
+  line-height: 33px;
+  margin: 10px 0;
+}
+
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 41px;
+  column-gap: 37px;
+  width: 90em;
+}
+
+.cards .card {
+  max-width: 399px;
+  height: 18em;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+  /* padding: 10px; */
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+  /* filter: drop-shadow(10px 0px 5px #808088); */
+}
+
+.cards .card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  margin-bottom: 15px;
+}
+
+.cards .card:hover {
+  transform: translateY(-10px);
+}
+
+.card-h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+
+.card-para {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4em;
+}
+
+.card_span {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.list_items {
+  font-size: 55px;
+  margin-bottom: 100px;
+}
+
+.list_items h1 {
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.list_items ul li {
+  font-family: "Roboto", sans-serif;
+  list-style: disc;
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 15px;
+  font-weight: 400;
+}
+
+/* REVIEW-CARD */
+
+.review-card {
+  background-color: var(--review-card);
+}
+
+.review-card-content {
+  padding: 91px 120px 111px;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.review-card-content h1 {
+  font-size: 55px;
+  margin-bottom: 55px;
+}
+
+.review-card-content p {
+  font-size: 20px;
+  margin-bottom: 33px;
+}
+
+.review-card-content .card {
+  background-color: white;
+  max-width: 790px;
+  box-sizing: border-box;
+  padding: 40px 45px 35px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.review-card-content .reviewer {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.review-card-content .info h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.review-card-content .info img {
+  width: 32px;
+}
+
+/* ABOVE-FOOTER */
+
+.above-footer {
+  background-color: var(--above-footer);
+}
+
+.above-footer-content {
+  padding: 180px 0 192px 122px;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.above-footer-content h1 {
+  margin-bottom: 59px;
+  font-family: Roboto Slab;
+  font-size: 55px;
+}
+
+.above-footer-content p {
+  font-size: 25px;
+}
+
+.above-footer-content span {
+  font-size: 80px;
+}
+
+.above-footer-content .short-texts {
+  margin-top: 76px;
+  display: flex;
+  gap: 70px;
+}
+
+.above-footer-content .short-text {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  max-width: 294px;
+}
+
+.above-footer-content .short-text h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.above-footer-content .short-text p {
+  font-size: 18px;
+}
+
+/* FOOTER */
+
+footer {
+  height: auto;
+  background: #000;
+}
+
+.footer-content {
+  max-width: 1440px;
+  box-sizing: border-box;
+  padding: 50px 174px 42px 122px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.footer-content .top-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content .lt-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-content .lt-content .logo {
+  max-width: 115px;
+}
+
+.footer-content .lt-content .social-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-content .rt-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  gap: 14px;
+  margin-left: 32px;
+}
+
+.footer-content .rt-content div {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  cursor: pointer;
+}
+
+.footer-content .rt-content span {
+  font-size: 25px;
+}
+
+.footer-content .lb-content {
+
+  font-size: 18px;
+  color: white;
+  margin-top: 145px;
+}
+
+@media (max-width: 375px) {
+
+  header img {
+    max-width: 52px;
+    padding-bottom: 44px;
+  }
+
+  main section {
+    padding-bottom: 40px;
+  }
+
+  nav .date {
+    font-size: 10px;
+    margin-right: 11px;
+  }
+
+  .kino {
+    display: block;
+  }
+
+  .kino .left {
+    width: 100%;
+  }
+
+  .kino .left h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .kino .left p {
+    margin-bottom: 20px;
+  }
+
+  .kino .right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .kino .right img {
+    max-width: 142px;
+    max-height: 175px;
+  }
+
+  .bottom {
+    max-width: 226px;
+    margin-top: 20px;
+  }
+
+  .bottom .items {
+    padding: 9px;
+    margin-left: 0px;
+  }
+
+
+  .bottom p {
+    font-size: 11px;
+  }
+
+  .bottom span {
+    font-size: 10px;
+    margin-top: 15px;
+    line-height: 0;
+  }
+
+  .about_course .top-row {
+    display: block;
+  }
+
+  .about_course .texts {
+    max-width: 100%;
+  }
+
+  .about_course .top-row {
+    margin: 45px 0 20px;
+  }
+
+  .about_course .top-row img {
+    justify-self: center;
+    margin: 32px 0 0;
+    width: 70%;
+    object-fit: contain;
+    max-width: 170px;
+    max-height: 160px;
+    position: relative;
+    left: 15%;
+  }
+
+  .about_course .texts {
+    margin-right: 0px;
+
+  }
+
+  .about_course .top {
+    display: block;
+  }
+
+  .about_course .short-texts {
+    flex-wrap: wrap;
+  }
+
+  .about_course .short-text {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .about_course .texts h1 {
+    font-size: 25px;
+    margin-bottom: 24px;
+  }
+
+  .about_course .texts p {
+    font-size: 12px;
+  }
+
+  .about_course .short-texts h3 {
+    font-size: 12px;
+  }
+
+  .about_course .short-texts p {
+    font-size: 10px;
+  }
+
+  .about_course .bottom-row img {
+    display: none;
+  }
+
+  .format h2 {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  .info .head {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 3px;
+  }
+
+  .infoes {
+    flex-wrap: wrap;
+  }
+
+  .info p {
+    width: 170px;
+    font-size: 10px;
+    line-height: 13px;
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-head {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
+
+  .card-h2 {
+    font-size: 14px;
+  }
+
+  .card-para {
+    font-size: 12px;
+  }
+
+  .cards .card {
+    max-width: 185px;
+    height: auto;
+  }
+
+  .list_items {
+    margin-bottom: 61px;
+  }
+
+  .list_items h1 {
+    font-size: 26px;
+    margin-bottom: 23px;
+  }
+
+  .list_items ul li {
+    line-height: 18px;
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+
+  /* REVIEW-CARD MOBILE*/
+
+  .review-card-content {
+    padding: 42px 36px 53px;
+  }
+
+  .review-card-content h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .review-card-content .card {
+    border-radius: 14px;
+    max-width: 308px;
+    padding: 18px 21px 13px;
+  }
+
+  .review-card-content p {
+    font-size: 10px;
+    margin-bottom: 13px;
+  }
+
+  .review-card-content .reviewer {
+    gap: 20px;
+  }
+
+  .review-card-content .avatar {
+    width: 30%;
+  }
+
+  .review-card-content .info h3 {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .review-card-content .info img {
+    width: 15px;
+  }
+
+  /* ABOVE-FOOTER MOBILE*/
+
+  .above-footer-content {
+    padding: 62px 35px 72px;
+  }
+
+  .above-footer-content h1 {
+    font-size: 26px;
+  }
+
+  .above-footer-content p {
+    font-size: 12px;
+  }
+
+  .above-footer-content span {
+    font-size: 37px;
+  }
+
+  .above-footer-content .short-texts {
+    margin-top: 35px;
+    gap: 30px;
+  }
+
+  .above-footer-content .short-texts h3 {
+    font-size: 12px;
+  }
+
+  .above-footer-content .short-texts p {
+    font-size: 10px;
+  }
+
+  .above-footer-content .short-text {
+    max-width: 138px;
+  }
+
+  /* FOOTER MOBILE*/
+
+  footer {
+    height: auto;
+  }
+
+  .footer-content {
+    padding: 23px 38px 18px;
+    justify-content: flex-start;
+  }
+
+  .footer-content .top-row {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footer-content .lt-content .social-icons {
+    gap: 8px;
+  }
+
+  .footer-content .lt-content .social-icons img {
+    width: 15px;
+  }
+
+  .footer-content .lt-content {
+    gap: 14px;
+  }
+
+  .footer-content .lt-content .logo {
+    max-width: 54px;
+  }
+
+  .footer-content .rt-content {
+    gap: 10px;
+    margin: 48px 0;
+  }
+
+  .footer-content .rt-content img {
+    width: 13px;
+  }
+
+  .footer-content .rt-content span {
+    font-size: 12px;
+  }
+
+  .footer-content .lb-content {
+    font-size: 10px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 834px) {
+  nav .date {
+    font-size: 12px;
+  }
+
+  .kino .left h1 {
+    font-size: 46px;
+    line-height: 46px;
+  }
+
+  .kino .left p {
+    font-size: 12px;
+  }
+
+  .bottom .items {
+    max-width: 280px;
+    margin-left: -40px;
+  }
+
+  .bottom p {
+    font-size: 14px;
+  }
+
+  .bottom span {
+    font-size: 12px;
+  }
+
+  .kino .right img {
+    max-width: 176px;
+    max-height: 206px;
+    width: 80%;
+    object-fit: contain;
+  }
+
+  /*    .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 21px;
+    row-gap: 26px;
+  }
+  .card-head {
+    margin-left: 21px;
+    margin-bottom: 73px;
+    font-size: 32px;
+  }
+  
+  .card-h2 {
+    font-size: 17px;
+  }
+  
+  .card-para {
+    font-size: 14px;
+  }
+  
+  .card {
+    height: auto;
+  }
+  
+  .list_items h1 {
+    font-size: 26px;
+  }
+  .list_items ul li {
+    font-size: 12px;
+    line-height: 18px;
+  } */
+
+  .about_course .texts {
+    max-width: 380px;
+    margin-right: 50px;
+  }
+
+  .about_course .texts h1 {
+    font-size: 32px;
+    margin-bottom: 29px;
+  }
+
+  .about_course .short-text h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .about_course .texts p {
+    font-size: 14px;
+  }
+
+  .about_course .short-text p {
+    font-size: 11px;
+  }
+
+  .about_course .top-row img {
+    width: 182px;
+    height: 182px;
+  }
+
+  .about_course .top-row {
+    margin: 56px 0 28px;
+  }
+
+  .about_course .bottom-row {
+    justify-content: flex-start;
+  }
+
+  .about_course .bottom-row img {
+    width: 134px;
+    height: 118px;
+    margin: 0;
+  }
+
+  .about_course .short-texts {
+    max-width: 370px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .about_course .short-text {
+    width: 87px;
+  }
+
+  .format h2 {
+    font-size: 32px;
+    line-height: 33px;
+    margin-bottom: 70px;
+  }
+
+  .infoes {
+    flex-wrap: wrap;
+  }
+
+  .infoes .info {
+    max-width: 170px;
+  }
+
+  .info .head {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .info p {
+    width: 142px;
+    margin-right: 60px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* max-width: 231px; */
+    column-gap: 21px;
+    row-gap: 26px;
+  }
+
+  .card-h2 {
+    font-size: 17px;
+  }
+
+  .card-para {
+    font-size: 14px;
+  }
+
+  .card-head {
+    margin: 0 auto;
+    margin-bottom: 75px;
+    font-size: 32px;
+  }
+
+  .cards .card {
+    height: auto;
+  }
+
+  .list_items {
+    margin-bottom: 40px;
+  }
+
+
+  .list_items h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .list_items ul li {
+    line-height: 24px;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+
+  /* REVIEW-CARD TABLET*/
+
+  .review-card-content {
+    padding: 53px 71px 64px;
+  }
+
+  .review-card-content h1 {
+    font-size: 32px;
+    margin-bottom: 36px;
+  }
+
+  .review-card-content .card {
+    border-radius: 18px;
+    max-width: 460px;
+    padding: 23px 26px 20px;
+  }
+
+  .review-card-content p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .review-card-content .avatar {
+    width: 90px;
+  }
+
+  .review-card-content .reviewer {
+    gap: 25px;
+  }
+
+  .review-card-content .info h3 {
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+
+  .review-card-content .info img {
+    width: 18px;
+  }
+
+  /* ABOVE-FOOTER TABLET*/
+
+  .above-footer-content {
+    padding: 103px 70px 116px;
+  }
+
+  .above-footer-content h1 {
+    margin-bottom: 31px;
+    font-size: 32px;
+  }
+
+  .above-footer-content p {
+    font-size: 14px;
+  }
+
+  .above-footer-content span {
+    font-size: 46px;
+  }
+
+
+  .above-footer-content .short-texts {
+    gap: 40px;
+    margin-top: 35px;
+  }
+
+  .above-footer-content .short-text {
+    max-width: 170px;
+  }
+
+  .above-footer-content .short-text h3 {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .above-footer-content .short-text p {
+    font-size: 10px;
+  }
+
+  /* FOOTER TABLET*/
+
+  .footer-content {
+    padding: 29px 100px 25px 71px;
+  }
+
+  .footer-content .lt-content {
+    gap: 18px;
+  }
+
+  .footer-content .lt-content .logo {
+    width: 66px;
+  }
+
+  .footer-content .lt-content .social-icons {
+    gap: 10px;
+  }
+
+  .footer-content .lt-content .social-icons img {
+    max-width: 20px;
+  }
+
+  .footer-content .lb-content {
+    font-size: 10px;
+    margin-top: 85px;
+  }
+
+  .footer-content .rt-content div {
+    gap: 13px;
+  }
+
+  .footer-content .rt-content span {
+    font-size: 14px;
+  }
+
+  .footer-content .rt-content img {
+    width: 15px;
+  }
+}

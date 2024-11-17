@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --grey: rgba(196, 196, 196, 1);
+    --yellow: rgba(255, 220, 64, 1);
+    --purple: rgba(131, 58, 224, 1);
+    --purple-light: rgba(153, 83, 241, 1);
+    --radius: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif, serif;
+}
+
+.card {
+    margin: 232px auto;
+    align-items: center;
+    max-width: 336px;
+    border: 1px solid var(--grey);
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+
+.in-card {
+    padding: 0 25px 19px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yellow-line {
+    background-color: var(--yellow);
+    height: 28px;
+    width: 100%;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 900;
+    margin: 13px 0 20px 0;
+}
+
+.sort-icon {
+    align-self: flex-end;
+    margin: 0 8px 11px 0;
+    cursor: pointer;
+}
+
+.input-box {
+    width: 100%;
+    border-radius: var(--radius);
+    border: 1px solid var(--grey);
+    align-items: center;
+    padding: 0 25px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: var(--radius);
+}
+
+.x-mark {
+    margin-left: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.x-mark:hover {
+    background-color: var(--purple);
+}
+
+.x-mark:hover path {
+    stroke: white;
+}
+
+.x-mark:hover rect {
+    stroke: none;
+}
+
+.list {
+    margin-top: 15px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid var(--grey);
+    box-sizing: border-box;
+    display: none;
+}
+
+.list ul {
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 40px;
+    max-height: 200px;
+    padding: 0 25px;
+    flex: 1;
+}
+
+.list li {
+    list-style-type: none;
+    padding: 10px 0;
+    justify-content: space-between;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.list li span {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.add-button {
+    border-radius: 70px;
+    border: none;
+    height: 42px;
+    width: 150px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    background-color: var(--purple);
+}
+
+.add-button:hover {
+    transition: 0.3s ease;
+    background-color: var(--yellow);
+    cursor: pointer;
+}
+
+.add-button:hover .plus-circle {
+    background-color: white;
+    transition: 0.3s ease;
+    border: 1px solid var(--yellow);
+}
+
+.add-button:hover p {
+    color: black;
+    transition: 0.3s ease;
+}
+
+.add-button:hover span {
+    transition: 0.3s ease;
+    color: black;
+}
+
+
+.plus-circle {
+    width: 42px;
+    height: 100%;
+    border-radius: 100%;
+    background-color: var(--purple-light);
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.plus-circle span {
+    align-self: center;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
